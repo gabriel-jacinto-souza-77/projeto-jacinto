@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>brooklyn burgue</title>
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+        <script type="text/javascript">
+            function calcular(){
+                var refrigeranteCocaCola,refrigeranteCocaColaZero,refrigeranteFanta,refrigeranteGuarana,refrigeranteSprite,hamburgueCarne,hamburgueFrango,hamburguePresunto,hamburgueQueijo,hamburgueX,soma,resultado;
+                refrigeranteCocaCola=document.calculos.refrigeranteCocaCola.value;
+                refrigeranteCocaColaZero=document.calculos.refrigeranteCocaColaZero.value;
+                refrigeranteFanta=document.calculos.refrigeranteFanta.value;
+                refrigeranteGuarana=document.calculos.refrigeranteGuarana.value;
+                refrigeranteSprite=document.calculos.refrigeranteSprite.value;
+                hamburgueXEgg=document.calculos.hamburgueXEgg.value;
+                hamburgueXFrango=document.calculos.hamburgueXFrango.value;
+                hamburgueXBacon=document.calculos.hamburgueXBacon.value;
+                hamburgueXSalada=document.calculos.hamburgueXSalada.value;
+                hamburgueX=document.calculos.hamburgueX.value;
+                soma=(parseInt(refrigeranteCocaCola)*8)+(parseInt(hamburgueX)*11)+parseInt(refrigeranteCocaColaZero)*8+parseInt(hamburgueXBacon)*13+parseInt(refrigeranteFanta)*8+parseInt(hamburgueXFrango)*14+parseInt(refrigeranteGuarana)*8+parseInt(hamburgueXEgg)*10+parseInt(refrigeranteSprite)*8+parseInt(hamburgueXSalada)*11;  
+                document.calculos.valor.value=soma;  
+            }
+        </script>
+    </head>
+    <body bgcolor="DarkGray" text="white">
+        <form name="calculos">
+            <center>
+                <h1>-BROOKLYN BURGUE-</h1>
+                <h2>veja abaixo o cardapio</h2>
+                <img src="hamburgue2.png">
+                </center>
+                <center>
+                <img src="BIGBURGUE.jpg" height="500" width="500">
+                <h1> -cardapio-</h1>
+                <h1>-HAMBURGUE X Egg</h1><h3>-Pao de hamburgue,hamburgue,queijo,ovo duplo,alface,tomate e maionese-<h1>-R$10,00</h1><input type="text" name="hamburgueXEgg" size="10" value="0"></h3>
+                <h1>-HAMBURGUE X Frango</h1> <h3>-Pao de hamburgue,file de frango,alface,tomate,milho,batata palha,presunto,queijo e maionese-<h1>-R$14,00</h1><input type="text" name="hamburgueXFrango" size="10" value="0"></h3>
+                <h1>-HAMBURGUE X Salada</h1> <h3>-Pao de hamburgue,hamburgue,queijo,milho,alface,tomate e maionese-<h1>-R$12,00</h1><input type="text" name="hamburgueXSalada" size="10" value="0"></h3>
+                <h1>-HAMBURGUE X Bacon</h1> <h3>-Pao de hamburgue,hamburgue,queijo,bacon,alface e maionese-<h1>-R$13,00</h1><input type="text" name="hamburgueXBacon" size="10" value="0"></h3>
+                <h1>-HAMBURGUE X</h1> <h3>-Pao de hamburgue,hamburgue e queijo-<h1>-R$11,00</h1><input type="text" name="hamburgueX" size="10" value="0"></h3>
+                </center>
+                <center>
+                <img src="coca cuela.avif" height="500" width="500">
+                <h1>COCA COLA-lata(350) -R$8,00<input type="text" name="refrigeranteCocaCola" size="10" value="0"></h1>
+                <h1>COCA COLA ZERO-lata(350) -R$8,00<input type="text" name="refrigeranteCocaColaZero" size="10" value="0"></h1>
+                <h1>FANTA-lata(350) -R$8,00<input type="text" name="refrigeranteFanta" size="10" value="0"></h1>
+                <h1>SPRITE-lata(350) -R$8,00<input type="text" name="refrigeranteSprite" size="10" value="0"></h1>
+                <h1>GUARANAlata(350) -R$8,00<input type="text" name="refrigeranteGuarana" size="10" value="0"></h1>
+                </center>
+            <table align="center">
+               
+                <tr>
+                <td colspan="2" align="center"><input type="button" name="bt" value="Valor a Pagar" onclick="calcular();">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    <br>
+        <div style="border: 1px solid black;">
+            <table align="center">
+                <tr>
+                    <td><label><b><h1><center><img src="cifrao.png" width="109" height="80"><br>valor a Pagar<br><input type="text" name="valor" value="" size="10"></h1></b></center></label></td>
+                        <td><br></td>
+                    </tr>
+                </table>
+            </div>
+</html>
